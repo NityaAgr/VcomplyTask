@@ -10,6 +10,8 @@ import { WeeklyComponent } from './frequency/weekly/weekly.component';
 import { MonthlyComponent } from './frequency/monthly/monthly.component';
 import { YearlyComponent } from './frequency/yearly/yearly.component';
 
+import {MatTabsModule} from '@angular/material/tabs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { YearlyComponent } from './frequency/yearly/yearly.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
