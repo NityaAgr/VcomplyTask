@@ -10,7 +10,11 @@ import { WeeklyComponent } from './frequency/weekly/weekly.component';
 import { MonthlyComponent } from './frequency/monthly/monthly.component';
 import { YearlyComponent } from './frequency/yearly/yearly.component';
 
+import {MatDatepickerModule,MatNativeDateModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material/tabs';
+import { MatFormFieldModule, MatInputModule } from "@angular/material";
+import {FormsModule, ReactiveFormsModule} from"@angular/forms";
+
 
 @NgModule({
   declarations: [
@@ -25,9 +29,15 @@ import {MatTabsModule} from '@angular/material/tabs';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [MatDatepickerModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
